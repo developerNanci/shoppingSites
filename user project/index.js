@@ -2,7 +2,7 @@ const express = require('express');
 
 // Load users data from JSON file
 const {connectMongodb} = require('./connection')
-const userRouter = require('./routes/user')
+const userRouter = require('../routes/user')
 const app = express();
 const PORT = 8000;
 connectMongodb('mongodb://127.0.0.1:27017/userDataApp-1?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.1')
