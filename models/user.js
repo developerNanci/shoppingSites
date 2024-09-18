@@ -1,29 +1,7 @@
-const mongoose = require("mongoose");
+const express = require('express')
 
-const userSchema = new mongoose.Schema(
-    {
-      firstName: {
-        type: String,
-        require: true,
-      },
-      lastName: {
-        type: String,
-      },
-      email: {
-        type: String,
-        require: true,
-        unique: true,
-      },
-      jobTitle: {
-        type: String,
-      },
-      gender: {
-        type: String,
-      },
-    },
-    { timestamps: true }
-  );
+const router = express.Router();
 
-  const User = mongoose.model("user", userSchema);
+router.post('/', )
 
-  module.exports = User
+module.exports = router
